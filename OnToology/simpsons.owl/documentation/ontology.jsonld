@@ -190,8 +190,17 @@
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Adult human characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Adult"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal",
@@ -200,8 +209,14 @@
     "@language" : "en",
     "@value" : "Animal character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Animal"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat",
@@ -210,8 +225,14 @@
     "@language" : "en",
     "@value" : "Cat character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cat"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character",
@@ -219,6 +240,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Serie character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy",
@@ -226,6 +250,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "TV show comedy genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Comedy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"
@@ -237,6 +264,9 @@
     "@language" : "en",
     "@value" : "Serie director"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Director"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"
   } ]
@@ -247,6 +277,9 @@
     "@language" : "en",
     "@value" : "Dog character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dog"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"
   } ]
@@ -256,6 +289,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Series episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Episode"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family",
@@ -263,6 +299,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Family of characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Family"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female",
@@ -270,6 +309,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Female gender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Female"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"
@@ -283,6 +325,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Characters gender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gender"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre",
@@ -290,6 +335,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "TV Genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Genre"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist",
@@ -297,6 +345,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Serie guionist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Guionist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"
@@ -327,6 +378,9 @@
     "@language" : "en",
     "@value" : "TV show horror genre"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Horror"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"
   } ]
@@ -337,6 +391,9 @@
     "@language" : "en",
     "@value" : "Human character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Human"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
   } ]
@@ -346,6 +403,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Series locations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Location"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male",
@@ -353,6 +413,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Male gender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Male"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"
@@ -382,8 +445,14 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Ordinary episode"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ordinary"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person",
@@ -391,6 +460,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Workers of the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Person"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season",
@@ -398,6 +470,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Series seasson"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Season"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1",
@@ -409,11 +484,19 @@
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Season_1 of the simpsons"
+    "@value" : "Season1 of the simpsons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Season1"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer"
+  }, {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"
   } ],
@@ -426,6 +509,11 @@
   "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1"
   } ],
+  "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer"
+  }, {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge"
+  } ],
   "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "30"
@@ -435,6 +523,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "1rst episode of the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SimpsonsRoastinOnAnOpenFire"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special",
@@ -442,22 +533,20 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Special episode"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Special"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Main location of the series"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Under-age human characters"
+  }, {
+    "@value" : "UnderAge"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"
   } ]
@@ -468,32 +557,65 @@
     "@language" : "en",
     "@value" : "Vocie actor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VoiceActor"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A character appears on an episode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "appearsIn"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Location appears on an episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "appearsOn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A character belongs to a family"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "belongsToFamily"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson",
@@ -504,11 +626,29 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "belongsToSeason"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An episode contains characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "containsCharacter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge",
@@ -518,6 +658,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -531,6 +674,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDuration"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
@@ -542,6 +688,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEpisode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
@@ -555,20 +704,41 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasGender"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An episode has one or more genres"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasGenre"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A family is formed by characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isFormedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn",
@@ -579,17 +749,23 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "takesPlaceIn"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A person works on an episode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "worksOn"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
