@@ -1,5 +1,9 @@
 {
   "@context" : {
+    "containsCharacter" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter",
+      "@type" : "@id"
+    },
     "Ordinary" : {
       "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary"
     },
@@ -82,11 +86,19 @@
     "Family" : {
       "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"
     },
+    "isFormedBy" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy",
+      "@type" : "@id"
+    },
     "Horror" : {
       "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror"
     },
     "Female" : {
       "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female"
+    },
+    "appearsOn" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn",
+      "@type" : "@id"
     },
     "hasGenre" : {
       "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre",
@@ -98,9 +110,6 @@
     },
     "Under-age" : {
       "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age"
-    },
-    "Springfield" : {
-      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield"
     },
     "worksOn" : {
       "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn",

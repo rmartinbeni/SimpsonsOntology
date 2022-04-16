@@ -24,17 +24,27 @@
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A character appears on an episode" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn> <http://www.w3.org/2000/01/rdf-schema#label> "appearsIn" .
+# 
+# http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Location appears on an episode" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn> <http://www.w3.org/2000/01/rdf-schema#label> "appearsOn" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A character belongs to a family" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToFamily" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -42,12 +52,21 @@
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson> <http://www.w3.org/2000/01/rdf-schema#comment> "An episide of the series belongs to a season" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToSeason" .
+# 
+# http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "An episode contains characters" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "containsCharacter" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "A season has episodes" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "hasEpisode" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -55,24 +74,37 @@
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender> <http://www.w3.org/2000/01/rdf-schema#comment> "A character has gender" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender> <http://www.w3.org/2000/01/rdf-schema#label> "hasGender" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre> <http://www.w3.org/2000/01/rdf-schema#comment> "An episode has one or more genres" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre> <http://www.w3.org/2000/01/rdf-schema#label> "hasGenre" .
+# 
+# http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A family is formed by characters" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isFormedBy" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An episode takes place in one or various locations" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn> <http://www.w3.org/2000/01/rdf-schema#label> "takesPlaceIn" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn> <http://www.w3.org/2000/01/rdf-schema#comment> "A person works on an episode" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn> <http://www.w3.org/2000/01/rdf-schema#label> "worksOn" .
 # 
 # 
 # 
@@ -88,12 +120,14 @@
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of characters" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "hasAge" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of episodes" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration> <http://www.w3.org/2000/01/rdf-schema#label> "hasDuration" .
 # 
 # 
 # 
@@ -107,113 +141,137 @@
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult> <http://www.w3.org/2000/01/rdf-schema#comment> "Adult human characters" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult> <http://www.w3.org/2000/01/rdf-schema#label> "Adult" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal> <http://www.w3.org/2000/01/rdf-schema#comment> "Animal character"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal> <http://www.w3.org/2000/01/rdf-schema#label> "Animal" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat> <http://www.w3.org/2000/01/rdf-schema#comment> "Cat character"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat> <http://www.w3.org/2000/01/rdf-schema#label> "Cat" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Serie character"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy> <http://www.w3.org/2000/01/rdf-schema#comment> "TV show comedy genre"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy> <http://www.w3.org/2000/01/rdf-schema#label> "Comedy" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Serie director"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog> <http://www.w3.org/2000/01/rdf-schema#comment> "Dog character"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog> <http://www.w3.org/2000/01/rdf-schema#label> "Dog" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Series episode"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> <http://www.w3.org/2000/01/rdf-schema#label> "Episode" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family> <http://www.w3.org/2000/01/rdf-schema#comment> "Family of characters"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Family" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female> <http://www.w3.org/2000/01/rdf-schema#comment> "Female gender"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female> <http://www.w3.org/2000/01/rdf-schema#label> "Female" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters gender"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender> <http://www.w3.org/2000/01/rdf-schema#label> "Gender" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "TV Genre"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre> <http://www.w3.org/2000/01/rdf-schema#label> "Genre" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist> <http://www.w3.org/2000/01/rdf-schema#comment> "Serie guionist"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist> <http://www.w3.org/2000/01/rdf-schema#label> "Guionist" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror> <http://www.w3.org/2000/01/rdf-schema#comment> "TV show horror genre"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror> <http://www.w3.org/2000/01/rdf-schema#label> "Horror" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human> <http://www.w3.org/2000/01/rdf-schema#comment> "Human character"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human> <http://www.w3.org/2000/01/rdf-schema#label> "Human" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Series locations"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male> <http://www.w3.org/2000/01/rdf-schema#comment> "Male gender"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male> <http://www.w3.org/2000/01/rdf-schema#label> "Male" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary> <http://www.w3.org/2000/01/rdf-schema#comment> "Ordinary episode" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary> <http://www.w3.org/2000/01/rdf-schema#label> "Ordinary" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Workers of the serie"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Series seasson"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special> <http://www.w3.org/2000/01/rdf-schema#comment> "Special episode" .
-# 
-# http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield
-<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location> .
-<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield> <http://www.w3.org/2000/01/rdf-schema#comment> "Main location of the series"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special> <http://www.w3.org/2000/01/rdf-schema#label> "Special" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age> <http://www.w3.org/2000/01/rdf-schema#label> "Under-age human characters" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age> <http://www.w3.org/2000/01/rdf-schema#label> "UnderAge" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocie actor"@en .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor> <http://www.w3.org/2000/01/rdf-schema#label> "VoiceActor" .
 # 
 # 
 # 
@@ -244,19 +302,25 @@
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> .
-<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Season_1 of the simpsons" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Season1 of the simpsons" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1> <http://www.w3.org/2000/01/rdf-schema#label> "Season1" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson> <http://www.w3.org/2000/01/rdf-schema#comment> "Simpson family is the family of the series protagonists" .
 # 
 # http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer> .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.w3.org/2000/01/rdf-schema#comment> "1rst episode of the serie" .
+<http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire> <http://www.w3.org/2000/01/rdf-schema#label> "SimpsonsRoastinOnAnOpenFire" .
 # 
 # 
 # 
