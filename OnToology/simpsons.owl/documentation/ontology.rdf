@@ -53,10 +53,24 @@ Author: Ricard Martin Benito</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:comment>A character appears on an episode</rdfs:comment>
+        <rdfs:label>appearsIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:comment>Location appears on an episode</rdfs:comment>
+        <rdfs:label>appearsOn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -65,10 +79,11 @@ Author: Ricard Martin Benito</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"/>
         <rdfs:comment>A character belongs to a family</rdfs:comment>
+        <rdfs:label>belongsToFamily</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -81,6 +96,19 @@ Author: Ricard Martin Benito</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"/>
         <rdfs:comment>An episide of the series belongs to a season</rdfs:comment>
+        <rdfs:label>belongsToSeason</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:comment>An episode contains characters</rdfs:comment>
+        <rdfs:label>containsCharacter</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -92,6 +120,7 @@ Author: Ricard Martin Benito</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:comment>A season has episodes</rdfs:comment>
+        <rdfs:label>hasEpisode</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -104,6 +133,7 @@ Author: Ricard Martin Benito</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"/>
         <rdfs:comment>A character has gender</rdfs:comment>
+        <rdfs:label>hasGender</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -112,9 +142,23 @@ Author: Ricard Martin Benito</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:comment>An episode has one or more genres</rdfs:comment>
+        <rdfs:label>hasGenre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:comment>A family is formed by characters</rdfs:comment>
+        <rdfs:label>isFormedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -126,6 +170,7 @@ Author: Ricard Martin Benito</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"/>
         <rdfs:comment>An episode takes place in one or various locations</rdfs:comment>
+        <rdfs:label>takesPlaceIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -134,9 +179,11 @@ Author: Ricard Martin Benito</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:comment>A person works on an episode</rdfs:comment>
+        <rdfs:label>worksOn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -160,6 +207,7 @@ Author: Ricard Martin Benito</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment>Age of characters</rdfs:comment>
+        <rdfs:label>hasAge</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -171,6 +219,7 @@ Author: Ricard Martin Benito</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment>Duration of episodes</rdfs:comment>
+        <rdfs:label>hasDuration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -192,6 +241,8 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+        <rdfs:comment>Adult human characters</rdfs:comment>
+        <rdfs:label>Adult</rdfs:label>
     </owl:Class>
     
 
@@ -202,6 +253,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
         <rdfs:comment xml:lang="en">Animal character</rdfs:comment>
+        <rdfs:label>Animal</rdfs:label>
     </owl:Class>
     
 
@@ -212,6 +264,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"/>
         <rdfs:comment xml:lang="en">Cat character</rdfs:comment>
+        <rdfs:label>Cat</rdfs:label>
     </owl:Class>
     
 
@@ -221,6 +274,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character">
         <rdfs:comment xml:lang="en">Serie character</rdfs:comment>
+        <rdfs:label>Character</rdfs:label>
     </owl:Class>
     
 
@@ -231,6 +285,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"/>
         <rdfs:comment xml:lang="en">TV show comedy genre</rdfs:comment>
+        <rdfs:label>Comedy</rdfs:label>
     </owl:Class>
     
 
@@ -241,6 +296,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
         <rdfs:comment xml:lang="en">Serie director</rdfs:comment>
+        <rdfs:label>Director</rdfs:label>
     </owl:Class>
     
 
@@ -251,6 +307,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"/>
         <rdfs:comment xml:lang="en">Dog character</rdfs:comment>
+        <rdfs:label>Dog</rdfs:label>
     </owl:Class>
     
 
@@ -260,6 +317,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode">
         <rdfs:comment xml:lang="en">Series episode</rdfs:comment>
+        <rdfs:label>Episode</rdfs:label>
     </owl:Class>
     
 
@@ -269,6 +327,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family">
         <rdfs:comment xml:lang="en">Family of characters</rdfs:comment>
+        <rdfs:label>Family</rdfs:label>
     </owl:Class>
     
 
@@ -280,6 +339,7 @@ Author: Ricard Martin Benito</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male"/>
         <rdfs:comment xml:lang="en">Female gender</rdfs:comment>
+        <rdfs:label>Female</rdfs:label>
     </owl:Class>
     
 
@@ -289,6 +349,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender">
         <rdfs:comment xml:lang="en">Characters gender</rdfs:comment>
+        <rdfs:label>Gender</rdfs:label>
     </owl:Class>
     
 
@@ -298,6 +359,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre">
         <rdfs:comment xml:lang="en">TV Genre</rdfs:comment>
+        <rdfs:label>Genre</rdfs:label>
     </owl:Class>
     
 
@@ -308,6 +370,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
         <rdfs:comment xml:lang="en">Serie guionist</rdfs:comment>
+        <rdfs:label>Guionist</rdfs:label>
     </owl:Class>
     
 
@@ -318,6 +381,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"/>
         <rdfs:comment xml:lang="en">TV show horror genre</rdfs:comment>
+        <rdfs:label>Horror</rdfs:label>
     </owl:Class>
     
 
@@ -328,6 +392,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
         <rdfs:comment xml:lang="en">Human character</rdfs:comment>
+        <rdfs:label>Human</rdfs:label>
     </owl:Class>
     
 
@@ -337,6 +402,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location">
         <rdfs:comment xml:lang="en">Series locations</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
     </owl:Class>
     
 
@@ -347,6 +413,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"/>
         <rdfs:comment xml:lang="en">Male gender</rdfs:comment>
+        <rdfs:label>Male</rdfs:label>
     </owl:Class>
     
 
@@ -357,6 +424,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:comment>Ordinary episode</rdfs:comment>
+        <rdfs:label>Ordinary</rdfs:label>
     </owl:Class>
     
 
@@ -366,6 +434,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person">
         <rdfs:comment xml:lang="en">Workers of the serie</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
 
@@ -375,6 +444,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season">
         <rdfs:comment xml:lang="en">Series seasson</rdfs:comment>
+        <rdfs:label>Season</rdfs:label>
     </owl:Class>
     
 
@@ -385,16 +455,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
         <rdfs:comment>Special episode</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield -->
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"/>
-        <rdfs:comment xml:lang="en">Main location of the series</rdfs:comment>
+        <rdfs:label>Special</rdfs:label>
     </owl:Class>
     
 
@@ -404,6 +465,8 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+        <rdfs:label>Under-age</rdfs:label>
+        <rdfs:label>Under-age human characters</rdfs:label>
     </owl:Class>
     
 
@@ -414,6 +477,7 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
         <rdfs:comment xml:lang="en">Vocie actor</rdfs:comment>
+        <rdfs:label>VoiceActor</rdfs:label>
     </owl:Class>
     
 
