@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7">
+        <rdfs:comment xml:lang="en">&quot;The Simpsons&quot; TV Series OWL Ontology
+
+Author: Ricard Martin Benito</rdfs:comment>
+        <rdfs:label xml:lang="en">The Simpsons TV show</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:comment>A character appears on an episode</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"/>
+        <rdfs:comment>A character belongs to a family</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"/>
+        <rdfs:comment>An episide of the series belongs to a season</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:comment>A season has episodes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"/>
+        <rdfs:comment>A character has gender</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:comment>An episode has one or more genres</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"/>
+        <rdfs:comment>An episode takes place in one or various locations</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:comment>A person works on an episode</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Age of characters</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Duration of episodes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:comment xml:lang="en">Animal character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"/>
+        <rdfs:comment xml:lang="en">Cat character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character">
+        <rdfs:comment xml:lang="en">Serie character</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/ontology/FictionalCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"/>
+        <rdfs:comment xml:lang="en">TV show comedy genre</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/page/Comedy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
+        <rdfs:comment xml:lang="en">Serie director</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"/>
+        <rdfs:comment xml:lang="en">Dog character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode">
+        <rdfs:comment xml:lang="en">Series episode</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family">
+        <rdfs:comment xml:lang="en">Family of characters</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male"/>
+        <rdfs:comment xml:lang="en">Female gender</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender">
+        <rdfs:comment xml:lang="en">Characters gender</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre">
+        <rdfs:comment xml:lang="en">TV Genre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
+        <rdfs:comment xml:lang="en">Serie guionist</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"/>
+        <rdfs:comment xml:lang="en">TV show horror genre</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/page/Horror_film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <rdfs:comment xml:lang="en">Human character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location">
+        <rdfs:comment xml:lang="en">Series locations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"/>
+        <rdfs:comment xml:lang="en">Male gender</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:comment>Ordinary episode</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person">
+        <rdfs:comment xml:lang="en">Workers of the serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season">
+        <rdfs:comment xml:lang="en">Series seasson</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <rdfs:comment>Special episode</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"/>
+        <rdfs:comment xml:lang="en">Main location of the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"/>
+        <rdfs:comment xml:lang="en">Vocie actor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire"/>
+        <belongsToFamily rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</hasAge>
+        <rdfs:comment>Homer simpson is the protagonists of the series</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+        <appearsIn rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire"/>
+        <belongsToFamily rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</hasAge>
+        <rdfs:comment>Wife of the main protagonist</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"/>
+        <hasEpisode rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire"/>
+        <rdfs:comment>Season_1 of the simpsons</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"/>
+        <rdfs:comment>Simpson family is the family of the series protagonists</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary"/>
+        <belongsToSeasson rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasDuration>
+        <rdfs:comment>1rst episode of the serie</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#age">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#dur">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#age"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#dur"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#dur"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
