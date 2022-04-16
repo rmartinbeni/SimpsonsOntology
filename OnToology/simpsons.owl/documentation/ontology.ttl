@@ -25,19 +25,30 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn
-:appearsIn rdf:type owl:ObjectProperty ,
-                    owl:AsymmetricProperty ;
+:appearsIn rdf:type owl:ObjectProperty ;
+           owl:inverseOf :containsCharacter ;
            rdfs:domain :Character ;
            rdfs:range :Episode ;
-           rdfs:comment "A character appears on an episode" .
+           rdfs:comment "A character appears on an episode" ;
+           rdfs:label "appearsIn" .
+
+
+###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsOn
+:appearsOn rdf:type owl:ObjectProperty ;
+           owl:inverseOf :takesPlaceIn ;
+           rdfs:domain :Location ;
+           rdfs:range :Episode ;
+           rdfs:comment "Location appears on an episode" ;
+           rdfs:label "appearsOn" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily
-:belongsToFamily rdf:type owl:ObjectProperty ,
-                          owl:AsymmetricProperty ;
+:belongsToFamily rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isFormedBy ;
                  rdfs:domain :Character ;
                  rdfs:range :Family ;
-                 rdfs:comment "A character belongs to a family" .
+                 rdfs:comment "A character belongs to a family" ;
+                 rdfs:label "belongsToFamily" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson
@@ -45,14 +56,24 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                   owl:inverseOf :hasEpisode ;
                   rdfs:domain :Episode ;
                   rdfs:range :Season ;
-                  rdfs:comment "An episide of the series belongs to a season" .
+                  rdfs:comment "An episide of the series belongs to a season" ;
+                  rdfs:label "belongsToSeason" .
+
+
+###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#containsCharacter
+:containsCharacter rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Episode ;
+                   rdfs:range :Character ;
+                   rdfs:comment "An episode contains characters" ;
+                   rdfs:label "containsCharacter" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode
 :hasEpisode rdf:type owl:ObjectProperty ;
             rdfs:domain :Season ;
             rdfs:range :Episode ;
-            rdfs:comment "A season has episodes" .
+            rdfs:comment "A season has episodes" ;
+            rdfs:label "hasEpisode" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender
@@ -60,28 +81,42 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                     owl:AsymmetricProperty ;
            rdfs:domain :Character ;
            rdfs:range :Gender ;
-           rdfs:comment "A character has gender" .
+           rdfs:comment "A character has gender" ;
+           rdfs:label "hasGender" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre
-:hasGenre rdf:type owl:ObjectProperty ;
+:hasGenre rdf:type owl:ObjectProperty ,
+                   owl:AsymmetricProperty ;
           rdfs:domain :Genre ;
           rdfs:range :Episode ;
-          rdfs:comment "An episode has one or more genres" .
+          rdfs:comment "An episode has one or more genres" ;
+          rdfs:label "hasGenre" .
+
+
+###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#isFormedBy
+:isFormedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Family ;
+            rdfs:range :Character ;
+            rdfs:comment "A family is formed by characters" ;
+            rdfs:label "isFormedBy" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn
 :takesPlaceIn rdf:type owl:ObjectProperty ;
               rdfs:domain :Episode ;
               rdfs:range :Location ;
-              rdfs:comment "An episode takes place in one or various locations" .
+              rdfs:comment "An episode takes place in one or various locations" ;
+              rdfs:label "takesPlaceIn" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn
-:worksOn rdf:type owl:ObjectProperty ;
+:worksOn rdf:type owl:ObjectProperty ,
+                  owl:AsymmetricProperty ;
          rdfs:domain :Person ;
          rdfs:range :Episode ;
-         rdfs:comment "A person works on an episode" .
+         rdfs:comment "A person works on an episode" ;
+         rdfs:label "worksOn" .
 
 
 #################################################################
@@ -92,14 +127,16 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 :hasAge rdf:type owl:DatatypeProperty ;
         rdfs:domain :Character ;
         rdfs:range xsd:integer ;
-        rdfs:comment "Age of characters" .
+        rdfs:comment "Age of characters" ;
+        rdfs:label "hasAge" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration
 :hasDuration rdf:type owl:DatatypeProperty ;
              rdfs:domain :Episode ;
              rdfs:range xsd:integer ;
-             rdfs:comment "Duration of episodes" .
+             rdfs:comment "Duration of episodes" ;
+             rdfs:label "hasDuration" .
 
 
 #################################################################
@@ -108,137 +145,156 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult
 :Adult rdf:type owl:Class ;
-       rdfs:subClassOf :Human .
+       rdfs:subClassOf :Human ;
+       rdfs:comment "Adult human characters" ;
+       rdfs:label "Adult" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal
 :Animal rdf:type owl:Class ;
         rdfs:subClassOf :Character ;
-        rdfs:comment "Animal character"@en .
+        rdfs:comment "Animal character"@en ;
+        rdfs:label "Animal" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat
 :Cat rdf:type owl:Class ;
      rdfs:subClassOf :Animal ;
-     rdfs:comment "Cat character"@en .
+     rdfs:comment "Cat character"@en ;
+     rdfs:label "Cat" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character
 :Character rdf:type owl:Class ;
-           rdfs:comment "Serie character"@en .
+           rdfs:comment "Serie character"@en ;
+           rdfs:label "Character" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy
 :Comedy rdf:type owl:Class ;
         rdfs:subClassOf :Genre ;
-        rdfs:comment "TV show comedy genre"@en .
+        rdfs:comment "TV show comedy genre"@en ;
+        rdfs:label "Comedy" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director
 :Director rdf:type owl:Class ;
           rdfs:subClassOf :Person ;
-          rdfs:comment "Serie director"@en .
+          rdfs:comment "Serie director"@en ;
+          rdfs:label "Director" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog
 :Dog rdf:type owl:Class ;
      rdfs:subClassOf :Animal ;
-     rdfs:comment "Dog character"@en .
+     rdfs:comment "Dog character"@en ;
+     rdfs:label "Dog" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode
 :Episode rdf:type owl:Class ;
-         rdfs:comment "Series episode"@en .
+         rdfs:comment "Series episode"@en ;
+         rdfs:label "Episode" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family
 :Family rdf:type owl:Class ;
-        rdfs:comment "Family of characters"@en .
+        rdfs:comment "Family of characters"@en ;
+        rdfs:label "Family" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female
 :Female rdf:type owl:Class ;
         rdfs:subClassOf :Gender ;
         owl:disjointWith :Male ;
-        rdfs:comment "Female gender"@en .
+        rdfs:comment "Female gender"@en ;
+        rdfs:label "Female" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender
 :Gender rdf:type owl:Class ;
-        rdfs:comment "Characters gender"@en .
+        rdfs:comment "Characters gender"@en ;
+        rdfs:label "Gender" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre
 :Genre rdf:type owl:Class ;
-       rdfs:comment "TV Genre"@en .
+       rdfs:comment "TV Genre"@en ;
+       rdfs:label "Genre" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist
 :Guionist rdf:type owl:Class ;
           rdfs:subClassOf :Person ;
-          rdfs:comment "Serie guionist"@en .
+          rdfs:comment "Serie guionist"@en ;
+          rdfs:label "Guionist" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror
 :Horror rdf:type owl:Class ;
         rdfs:subClassOf :Genre ;
-        rdfs:comment "TV show horror genre"@en .
+        rdfs:comment "TV show horror genre"@en ;
+        rdfs:label "Horror" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human
 :Human rdf:type owl:Class ;
        rdfs:subClassOf :Character ;
-       rdfs:comment "Human character"@en .
+       rdfs:comment "Human character"@en ;
+       rdfs:label "Human" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location
 :Location rdf:type owl:Class ;
-          rdfs:comment "Series locations"@en .
+          rdfs:comment "Series locations"@en ;
+          rdfs:label "Location" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male
 :Male rdf:type owl:Class ;
       rdfs:subClassOf :Gender ;
-      rdfs:comment "Male gender"@en .
+      rdfs:comment "Male gender"@en ;
+      rdfs:label "Male" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary
 :Ordinary rdf:type owl:Class ;
           rdfs:subClassOf :Episode ;
-          rdfs:comment "Ordinary episode" .
+          rdfs:comment "Ordinary episode" ;
+          rdfs:label "Ordinary" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person
 :Person rdf:type owl:Class ;
-        rdfs:comment "Workers of the serie"@en .
+        rdfs:comment "Workers of the serie"@en ;
+        rdfs:label "Person" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season
 :Season rdf:type owl:Class ;
-        rdfs:comment "Series seasson"@en .
+        rdfs:comment "Series seasson"@en ;
+        rdfs:label "Season" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special
 :Special rdf:type owl:Class ;
          rdfs:subClassOf :Episode ;
-         rdfs:comment "Special episode" .
-
-
-###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield
-:Springfield rdf:type owl:Class ;
-             rdfs:subClassOf :Location ;
-             rdfs:comment "Main location of the series"@en .
+         rdfs:comment "Special episode" ;
+         rdfs:label "Special" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age
 :Under-age rdf:type owl:Class ;
-           rdfs:subClassOf :Human .
+           rdfs:subClassOf :Human ;
+           rdfs:label "Under-age" ,
+                      "Under-age human characters" .
 
 
 ###  http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor
 :VoiceActor rdf:type owl:Class ;
             rdfs:subClassOf :Person ;
-            rdfs:comment "Vocie actor"@en .
+            rdfs:comment "Vocie actor"@en ;
+            rdfs:label "VoiceActor" .
 
 
 #################################################################
