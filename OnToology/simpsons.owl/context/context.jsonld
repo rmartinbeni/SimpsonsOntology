@@ -1,0 +1,125 @@
+{
+  "@context" : {
+    "Ordinary" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary"
+    },
+    "Dog" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog"
+    },
+    "belongsToFamily" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToFamily",
+      "@type" : "@id"
+    },
+    "belongsToSeasson" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#belongsToSeasson",
+      "@type" : "@id"
+    },
+    "Comedy" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Comedy"
+    },
+    "VoiceActor" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#VoiceActor"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Director"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Human" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Location"
+    },
+    "hasEpisode" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasEpisode",
+      "@type" : "@id"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"
+    },
+    "Animal" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"
+    },
+    "Gender" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Gender"
+    },
+    "Adult" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Person"
+    },
+    "hasDuration" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Special" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special"
+    },
+    "hasAge" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasGender" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGender",
+      "@type" : "@id"
+    },
+    "Guionist" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Guionist"
+    },
+    "Male" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Male"
+    },
+    "appearsIn" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#appearsIn",
+      "@type" : "@id"
+    },
+    "Family" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"
+    },
+    "Horror" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Horror"
+    },
+    "Female" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Female"
+    },
+    "hasGenre" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#hasGenre",
+      "@type" : "@id"
+    },
+    "takesPlaceIn" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#takesPlaceIn",
+      "@type" : "@id"
+    },
+    "Under-age" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age"
+    },
+    "Springfield" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Springfield"
+    },
+    "worksOn" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#worksOn",
+      "@type" : "@id"
+    },
+    "Cat" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Genre"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"
+    }
+  }
+}
