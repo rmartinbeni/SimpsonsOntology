@@ -221,6 +221,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Adult">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age"/>
         <rdfs:comment>Adult human characters</rdfs:comment>
         <rdfs:label>Adult</rdfs:label>
     </owl:Class>
@@ -231,6 +232,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
         <rdfs:comment xml:lang="en">Animal character</rdfs:comment>
         <rdfs:label>Animal</rdfs:label>
     </owl:Class>
@@ -241,6 +243,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Cat">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Animal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Dog"/>
         <rdfs:comment xml:lang="en">Cat character</rdfs:comment>
         <rdfs:label>Cat</rdfs:label>
     </owl:Class>
@@ -389,6 +392,7 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Episode"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Special"/>
         <rdfs:comment>Ordinary episode</rdfs:comment>
         <rdfs:label>Ordinary</rdfs:label>
     </owl:Class>
@@ -427,8 +431,8 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Under-age">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Human"/>
-        <rdfs:label>Under-age</rdfs:label>
         <rdfs:label>Under-age human characters</rdfs:label>
+        <rdfs:label>UnderAge</rdfs:label>
     </owl:Class>
     
 
@@ -483,7 +487,8 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season"/>
         <hasEpisode rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire"/>
-        <rdfs:comment>Season_1 of the simpsons</rdfs:comment>
+        <rdfs:comment>Season1 of the simpsons</rdfs:comment>
+        <rdfs:label>Season1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -492,6 +497,8 @@ Author: Ricard Martin Benito</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpson">
         <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Family"/>
+        <isFormedBy rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer"/>
+        <isFormedBy rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge"/>
         <rdfs:comment>Simpson family is the family of the series protagonists</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -502,8 +509,11 @@ Author: Ricard Martin Benito</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Simpsons_Roasting_on_an_Open_Fire">
         <rdf:type rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Ordinary"/>
         <belongsToSeasson rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Season_1"/>
+        <containsCharacter rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Homer"/>
+        <containsCharacter rdf:resource="http://www.semanticweb.org/ricard/ontologies/2022/3/untitled-ontology-7#Marge"/>
         <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasDuration>
         <rdfs:comment>1rst episode of the serie</rdfs:comment>
+        <rdfs:label>SimpsonsRoastinOnAnOpenFire</rdfs:label>
     </owl:NamedIndividual>
     
 
